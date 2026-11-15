@@ -1,0 +1,410 @@
+{
+  "meta": {
+    "siteTitle": "Radiatorchi | Specialist catalog of car radiators and cooling parts",
+    "siteDescription": "Catalog of car radiators and cooling system components. Find a product, review its details and contact Radiatorchi directly.",
+    "products": {
+      "title": "Products",
+      "description": "Catalog of car radiators and cooling parts. Search and filter by category and vehicle manufacturer."
+    },
+    "categories": {
+      "title": "Product categories",
+      "description": "Radiatorchi categories: car radiators, cooling fans, cooling system components and related parts."
+    },
+    "about": {
+      "title": "About us",
+      "description": "Learn about Radiatorchi, a specialist business in car radiators and cooling system components."
+    },
+    "contact": {
+      "title": "Contact us",
+      "description": "Reach Radiatorchi directly by phone, email or WhatsApp."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Answers to common questions about choosing a radiator, compatibility, ordering and delivery."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "Privacy policy of the Radiatorchi website."
+    },
+    "terms": {
+      "title": "Terms and conditions",
+      "description": "Terms of use of the Radiatorchi website."
+    },
+    "ordering": {
+      "title": "Ordering guide",
+      "description": "How to find a product, check compatibility and order by contacting Radiatorchi directly."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you were looking for does not exist."
+    }
+  },
+  "common": {
+    "skipToContent": "Skip to main content",
+    "viewAll": "View all",
+    "viewProduct": "View product",
+    "viewCategory": "View category",
+    "contactToOrder": "Contact to order",
+    "sampleBadge": "Demo sample",
+    "close": "Close",
+    "breadcrumb": "Breadcrumb",
+    "home": "Home",
+    "backHome": "Back to home",
+    "products": "Products",
+    "scrollHint": "Continue down the page"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "privacy": "Privacy policy",
+    "terms": "Terms and conditions",
+    "ordering": "Ordering guide",
+    "main": "Main navigation",
+    "openMenu": "Open menu",
+    "menuTitle": "Menu",
+    "cta": "Contact to order"
+  },
+  "theme": {
+    "label": "Color theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "lang": {
+    "fa": "فارسی",
+    "en": "English",
+    "switchLabel": "Change language"
+  },
+  "footer": {
+    "description": "Radiatorchi, a specialist catalog of car radiators and cooling system components. Orders are handled by direct contact.",
+    "explore": "Quick links",
+    "categories": "Categories",
+    "legal": "Information",
+    "contact": "Get in touch",
+    "social": "Social",
+    "rights": "© {year} Radiatorchi. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "Leave your car's cooling to the specialists",
+      "text": "A catalog of car radiators and cooling system components. Find a product, review its details and contact Radiatorchi directly.",
+      "primary": "Browse products",
+      "secondary": "Contact to order",
+      "imageAlt": "Car radiator with cooling fins"
+    },
+    "trust": {
+      "title": "Specialist catalog, direct contact",
+      "text": "Radiatorchi focuses on radiators and cooling system components, so finding a product and reaching us stays simple.",
+      "items": [
+        {
+          "title": "Specialist catalog",
+          "text": "Products are organized by category and vehicle manufacturer."
+        },
+        {
+          "title": "Compatibility information",
+          "text": "When available, compatible vehicles are shown on each product page."
+        },
+        {
+          "title": "Direct support",
+          "text": "Ask about any product by phone, email or WhatsApp."
+        },
+        {
+          "title": "Simple ordering",
+          "text": "Orders are placed by direct contact, with no account and no online payment."
+        }
+      ]
+    },
+    "categories": {
+      "title": "Product categories",
+      "text": "From radiators to related cooling system parts. Start with the category you need.",
+      "cta": "All categories"
+    },
+    "featured": {
+      "title": "Featured products",
+      "text": "A few examples from the Radiatorchi catalog.",
+      "cta": "View all products"
+    },
+    "why": {
+      "title": "Why Radiatorchi?",
+      "text": "One focused catalog and a clear path from finding a product to contacting us to order.",
+      "rows": [
+        {
+          "label": "Specialty",
+          "value": "Car radiators and cooling system components"
+        },
+        {
+          "label": "Finding a product",
+          "value": "Search by name, category and vehicle manufacturer"
+        },
+        {
+          "label": "Technical details",
+          "value": "Specifications and compatibility on each product page, when available"
+        },
+        {
+          "label": "Communication",
+          "value": "Talk directly to the Radiatorchi team"
+        },
+        {
+          "label": "Ordering",
+          "value": "By phone, email or WhatsApp"
+        }
+      ]
+    },
+    "company": {
+      "title": "About Radiatorchi",
+      "text": "Radiatorchi is a specialist business in car radiators and cooling system components. This website exists so customers can find products more easily and reach us directly.",
+      "values": [
+        "Expertise in vehicle cooling",
+        "Clear product information",
+        "Direct responsiveness"
+      ],
+      "cta": "More about us",
+      "imageAlt": "Vehicle cooling system parts"
+    },
+    "order": {
+      "title": "How does ordering work?",
+      "text": "There is no online shop or online payment on this website. Orders are finalized by direct contact.",
+      "steps": [
+        {
+          "title": "Find the product",
+          "text": "Search the catalog or start from the categories."
+        },
+        {
+          "title": "Review the details",
+          "text": "Check the technical details and compatibility."
+        },
+        {
+          "title": "Contact us",
+          "text": "Choose phone, email or WhatsApp."
+        },
+        {
+          "title": "Finalize the purchase",
+          "text": "Confirm availability and purchase terms with the Radiatorchi team."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "cta": "All questions"
+    },
+    "cta": {
+      "title": "Found the right product?",
+      "text": "Contact us to ask about it or order.",
+      "primary": "Contact us",
+      "secondary": "Browse products"
+    }
+  },
+  "catalog": {
+    "title": "Products",
+    "subtitle": "Search car radiators and cooling parts, and filter by category or vehicle manufacturer.",
+    "searchLabel": "Search products",
+    "searchPlaceholder": "Product name, category or manufacturer",
+    "filters": "Filters",
+    "filtersTitle": "Filter products",
+    "category": "Category",
+    "manufacturer": "Vehicle manufacturer",
+    "all": "All",
+    "sort": "Sort by",
+    "sortFeatured": "Default",
+    "sortName": "Product name",
+    "clear": "Clear filters",
+    "results": "{count, plural, one {# product} other {# products}} found",
+    "emptyTitle": "No products found",
+    "emptyText": "Change your search or clear the filters. If you are looking for a specific product, contact us.",
+    "pagination": "Pagination",
+    "prev": "Previous page",
+    "next": "Next page",
+    "page": "Page {page} of {total}"
+  },
+  "product": {
+    "description": "Description",
+    "specs": "Specifications",
+    "features": "Features",
+    "compatibility": "Vehicle compatibility",
+    "related": "Related products",
+    "specCategory": "Category",
+    "specManufacturers": "Vehicle manufacturer",
+    "specSku": "Product code",
+    "specBrand": "Brand",
+    "sampleNotice": "This page is a demo sample. Its specifications and compatibility are not verified and must be replaced with real data.",
+    "galleryLabel": "Product image gallery",
+    "showImage": "Show image {n}",
+    "contactNote": "Contact us to ask about this product or order it."
+  },
+  "category": {
+    "title": "Product categories",
+    "intro": "Browse Radiatorchi products by category.",
+    "productCount": "{count, plural, one {# product} other {# products}}",
+    "noProducts": "No products are listed in this category yet. Contact us to ask.",
+    "productsIn": "Products in this category",
+    "others": "Other categories"
+  },
+  "about": {
+    "heroTitle": "About Radiatorchi",
+    "heroText": "A specialist business in car radiators and cooling system components.",
+    "overviewTitle": "Overview",
+    "overviewText": "Radiatorchi supplies car radiators and cooling system components. This website is our catalog: customers can find a product here and contact us directly.",
+    "missionTitle": "Our mission",
+    "missionText": "Make it simple to find the right cooling component, and connect customers with a person who can help.",
+    "valuesTitle": "Our values",
+    "values": [
+      {
+        "title": "Expertise",
+        "text": "A focus on radiators and vehicle cooling systems."
+      },
+      {
+        "title": "Clarity",
+        "text": "We do not present unverified information as fact."
+      },
+      {
+        "title": "Direct contact",
+        "text": "We handle questions and orders directly, without intermediaries."
+      }
+    ],
+    "specTitle": "Specialization",
+    "specText": "Car radiators, cooling fans and cooling system components. See the full list in the catalog.",
+    "whyTitle": "Why Radiatorchi?",
+    "whyItems": [
+      "A focused, searchable catalog",
+      "Technical and compatibility details on product pages",
+      "Inquiries and orders by direct contact"
+    ],
+    "ctaTitle": "Have a question about a product?",
+    "ctaText": "The Radiatorchi team is ready to help."
+  },
+  "contact": {
+    "title": "Contact us",
+    "intro": "For inquiries, compatibility checks or orders, get in touch with us directly.",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "address": "Address",
+    "addressPlaceholder": "The store address will appear here once it is added.",
+    "hours": "Working hours",
+    "hoursPlaceholder": "Working hours will appear here once they are added.",
+    "social": "Social media",
+    "ctaTitle": "Get in touch now",
+    "ctaText": "Choose the way you prefer to reach us."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "intro": "Answers to common questions about choosing a radiator, compatibility and ordering.",
+    "searchLabel": "Search questions",
+    "searchPlaceholder": "Search for your question",
+    "all": "All",
+    "noResults": "No question matches this search. You can ask us directly.",
+    "ctaTitle": "Did not find your answer?",
+    "ctaText": "Ask us directly.",
+    "groups": {
+      "choosing": "Choosing a product",
+      "ordering": "Ordering",
+      "policies": "Delivery and terms"
+    }
+  },
+  "modal": {
+    "title": "Contact Radiatorchi",
+    "description": "To order or get information about a product, choose one of the options below.",
+    "productDescription": "To order or get information about “{product}”, contact us.",
+    "phone": {
+      "label": "Phone",
+      "action": "Call us"
+    },
+    "email": {
+      "label": "Email",
+      "action": "Send an email"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "action": "Send a message"
+    },
+    "emailSubject": "Product inquiry: {product}",
+    "whatsappMessage": "Hello, I would like information about “{product}”.",
+    "whatsappGeneric": "Hello, I would like information about Radiatorchi products.",
+    "emailSubjectGeneric": "Product inquiry",
+    "empty": "No contact method has been configured yet."
+  },
+  "ordering": {
+    "title": "Ordering guide",
+    "intro": "Orders at Radiatorchi are handled by direct contact. Here is how it works:",
+    "steps": [
+      {
+        "title": "Find the product",
+        "text": "Search the Products section or start from the categories."
+      },
+      {
+        "title": "Check compatibility",
+        "text": "If compatible vehicles are listed for a product, you will see them on its page. Otherwise, ask when you contact us."
+      },
+      {
+        "title": "Contact us",
+        "text": "Use the “Contact to order” button to choose phone, email or WhatsApp, and mention the product name."
+      },
+      {
+        "title": "Finalize the details",
+        "text": "Confirm availability, price, purchase terms and delivery with the Radiatorchi team."
+      }
+    ],
+    "notice": "No online payment is processed on this website, and no order is placed through it.",
+    "ctaTitle": "Ready to order?",
+    "ctaText": "Get in touch with us."
+  },
+  "legal": {
+    "draftNotice": "This text is a draft. Have it reviewed by a legal professional and matched to the real business terms before publishing.",
+    "privacyTitle": "Privacy policy",
+    "privacyIntro": "This page explains how the Radiatorchi website handles your information.",
+    "privacy": [
+      {
+        "title": "Information we collect",
+        "body": "This website has no sign-up, account or order form, and it does not collect your personal information through the site itself."
+      },
+      {
+        "title": "Direct contact",
+        "body": "When you contact us by phone, email or WhatsApp, the information you provide is used to answer your request. That communication is subject to the policies of the channel you choose."
+      },
+      {
+        "title": "Display preferences",
+        "body": "Your language and theme choices may be stored in your browser so they are kept on your next visit."
+      },
+      {
+        "title": "Changes",
+        "body": "This policy may be updated. The current version is always published on this page."
+      }
+    ],
+    "termsTitle": "Terms and conditions",
+    "termsIntro": "By using this website you accept the terms below.",
+    "terms": [
+      {
+        "title": "Nature of the website",
+        "body": "This website is the Radiatorchi product catalog. It offers no online shop, online payment or order placement."
+      },
+      {
+        "title": "Product information",
+        "body": "Product information is provided as guidance. Confirm compatibility and availability with the Radiatorchi team before buying."
+      },
+      {
+        "title": "Prices and availability",
+        "body": "Prices and stock are not shown on this website and are confirmed when you contact us."
+      },
+      {
+        "title": "Delivery, returns and warranty",
+        "body": "Delivery, return and warranty terms are communicated when you order, according to Radiatorchi's current policies."
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "Check the address or continue with one of the links below.",
+    "home": "Home page",
+    "products": "Browse products"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "text": "The page failed to load. Try again or go back to the home page.",
+    "retry": "Try again",
+    "home": "Home page"
+  }
+}
