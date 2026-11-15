@@ -5,36 +5,80 @@ import { ContactButton } from "@/components/modals/contact-button";
 import { Media } from "@/components/shared/media";
 import { buttonStyles } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import SideRays from '../SideRays.jsx';
+import { cn } from "cn";
 
 /** Homepage hero. The framed radiator is the likely LCP element, so it is the only `priority` image. */
 export async function Hero() {
   const t = await getTranslations("home");
   return (
-    <section className="relative isolate overflow-hidden border-b border-border">
-      {/* <div className="bg-fins fade-mask-b  scale-110 skew-x-12 absolute inset-0 -z-10" aria-hidden="true" /> */}
-      <div className="container-x grid items-center gap-12 py-12 lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-12 lg:py-16">
+    <section className="relative h-dvh isolate overflow-hidden border-b border-border -mt-20">
+
+      <div className="z-50! h-dvh" style={{ width: '100%', position: 'absolute' }}>
+        <SideRays
+          style={{}}
+          rayColor1="#FFC46B"
+          rayColor2="#96c8ff"
+          origin="top-left"
+          speed={2.5}
+          intensity={2}
+          spread={2}
+          density={5}
+          followMouse
+          blend={0.6}
+          sharpness={0.5}
+          tilt={0}
+          falloff={1.6}
+          glow={0.5}
+          saturation={1}
+          dust={0}
+          mouseInfluence={0.5}
+          intro
+          lightMode={false}
+          opacity={1}
+        />
+      </div>
+
+      {/* <div className="z-50" style={{ width: '100%', height: '800px', position: 'absolute' }}>
+        <SideRays
+          style={{}}
+          rayColor1="#FFC46B"
+          rayColor2="#96c8ff"
+          origin="top-left"
+          speed={2.5}
+          intensity={2}
+          spread={2}
+          density={5}
+          followMouse
+          blend={0.6}
+          sharpness={0.5}
+          tilt={0}
+          falloff={1.6}
+          glow={1}
+          saturation={1}
+          dust={0}
+          mouseInfluence={0.5}
+          intro
+          lightMode={false}
+          opacity={1}
+        />
+      </div> */}
+
+      <div className="container-x mt-20 grid items-center gap-12 py-12 lg:min-h-[calc(100svh-4.5rem)] lg:grid-cols-12 lg:py-16">
         <Stagger immediate stagger={0.12} className="lg:col-span-6 xl:col-span-5">
           <StaggerItem>
-            <h1 className="text-[2.6rem] font-black leading-tight sm:text-6xl ">{t("hero.title")}</h1>
+            <h1 className="text-[2.6rem] font-black leading-tight sm:text-5xl ">{t("hero.title")}</h1>
           </StaggerItem>
           <StaggerItem>
             <p className="mt-6 max-w-xl text-lg text-muted">{t("hero.text")}</p>
           </StaggerItem>
-          <StaggerItem className="mt-8 flex flex-wrap gap-3">
-            <Link href="/products" className={buttonStyles({ size: "lg" })}>
+          <StaggerItem className="mt-10 flex flex-wrap gap-3">
+            <Link href="/products" className={cn("shadow-2xl", buttonStyles({ size: "lg" }))}>
               {t("hero.primary")}
               <ArrowRight className="size-5 rtl:rotate-180" aria-hidden="true" />
             </Link>
-            <ContactButton size="lg" variant="secondary" label={t("hero.secondary")} />
+            <ContactButton className="shadow-2xl" size="lg" variant="secondary" label={t("hero.secondary")} />
           </StaggerItem>
-          {/* <StaggerItem className="mt-12 hidden lg:block">
-            <a href="#trust" className="inline-flex items-center gap-3 text-sm text-muted hover:text-foreground">
-              <span className="grid size-10 place-items-center border border-border">
-                <ChevronDown className="size-4" aria-hidden="true" />
-              </span>
-              {tc("scrollHint")}
-            </a>
-          </StaggerItem> */}
         </Stagger>
 
         <div className="relative lg:col-span-6 xl:col-span-7">
@@ -52,9 +96,10 @@ export async function Hero() {
               </div>
             </ImageReveal>
           </Parallax>
-          
+
         </div>
       </div>
+
     </section>
   );
 }

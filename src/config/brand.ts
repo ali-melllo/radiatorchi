@@ -6,9 +6,9 @@
 export const brand = {
   name: { fa: "رادیاتورچی", en: "Radiatorchi" },
   logo: {
-    icon: { src: "/images/logo/radiatorchi-icon.svg", width: 256, height: 256 },
-    light: { src: "/images/logo/radiatorchi-logo-light.svg", width: 240, height: 64 },
-    dark: { src: "/images/logo/radiatorchi-logo-dark.svg", width: 240, height: 64 },
+    icon: { src: "/images/logo/logo.png", width: 256, height: 256 },
+    light: { src: "/images/logo/typography.png", width: 240, height: 64 },
+    dark: { src: "/images/logo/typography.png", width: 240, height: 64 },
   },
   themeColor: { light: "#F01420", dark: "#090A0D" },
 } as const;

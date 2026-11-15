@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 /** Only the namespaces that client components read are sent to the browser. */
-const CLIENT_NAMESPACES = ["common", "nav", "theme", "lang", "catalog", "faq", "modal", "product"] as const;
+const CLIENT_NAMESPACES = ["common", "nav", "theme", "lang", "catalog", "faq", "modal", "product", "error"] as const;
 
 export default async function LocaleLayout({ children, params }: Props) {
   const locale = await resolveLocale(params);
@@ -76,7 +76,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               <ContactModalProvider methods={getContactMethods()}>
                 <a
                   href="#main"
-                  className="sr-only z-[100] bg-brand px-4 py-2 font-semibold text-on-brand focus:not-sr-only focus:fixed focus:start-3 focus:top-3"
+                  className="sr-only z-100 bg-brand px-4 py-2 font-semibold text-on-brand focus:not-sr-only focus:fixed focus:inset-s-3 focus:top-3"
                 >
                   {t("skipToContent")}
                 </a>

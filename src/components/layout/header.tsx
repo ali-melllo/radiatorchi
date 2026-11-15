@@ -35,13 +35,17 @@ export function Header({ slugMap }: { slugMap: SlugMap }) {
 
   return (
     <header
-      className={cn(
-        "sticky top-0 z-40 border-b transition-colors duration-200",
-        scrolled ? "border-border bg-background/95 backdrop-blur" : "border-transparent bg-background",
-      )}
-    >
-      <div className="container-x flex h-[4.5rem] items-center gap-6">
-        <Link href="/" aria-label={t("home")} className="shrink-0">
+        className={cn(
+          "sticky top-0 z-50 mx-auto w-full border px-5 md:px-10",
+          "transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1.03)]",
+          "will-change-[max-width,padding,top,border-radius,background-color]",
+          scrolled
+            ? "rounded-b-xl top-1 md:rounded-xl px-0! container-x shadow-2xl border-border bg-background/85 backdrop-blur-lg"
+            : "top-0 max-w-full border-transparent"
+        )}
+      >
+      <div className="container-x flex h-18 items-center gap-6">
+        <Link href="/" aria-label={t("home")} className="shrink-0 flex items-center">
           <Logo locale={locale} priority />
         </Link>
 

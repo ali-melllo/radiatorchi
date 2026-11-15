@@ -9,8 +9,8 @@ export function Logo({ locale, className, priority }: { locale: Locale; classNam
   const { light, dark } = brand.logo;
   return (
     <span className={cn("inline-flex", className)}>
-      <Media src={light.src} width={light.width} height={light.height} alt={alt} priority={priority} className="h-9 w-auto dark:hidden" />
-      <Media src={dark.src} width={dark.width} height={dark.height} alt={alt} priority={priority} className="hidden h-9 w-auto dark:block" />
+      <Media src={light.src} width={light.width} height={light.height} alt={alt} priority={priority} className="h-18 w-35 mt-2 dark:hidden" />
+      <Media src={dark.src} width={dark.width} height={dark.height} alt={alt} priority={priority} className="hidden h-18 w-35 mt-2 dark:block" />
     </span>
   );
 }
