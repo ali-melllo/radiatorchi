@@ -9,7 +9,7 @@ export async function Company() {
   const t = await getTranslations("home");
   const values = t.raw("company.values") as string[];
   return (
-    <section className="m-0! overflow-x-hidden container-x grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
+    <section className="overflow-x-hidden container-x grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
       <Parallax>
         <ImageReveal>
           <div className="chamfer relative aspect-4/3 ">
