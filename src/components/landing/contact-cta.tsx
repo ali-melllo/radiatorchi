@@ -12,8 +12,8 @@ export async function ContactCta({ title, text }: { title?: string; text?: strin
       <div className="bg-fins absolute inset-0 -z-10" aria-hidden="true" />
       <Reveal className="container-x flex flex-col items-start gap-8 py-16 lg:flex-row lg:items-center lg:justify-between lg:py-20">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-black leading-tight sm:text-5xl">{title ?? t("cta.title")}</h2>
-          <p className="mt-3 text-lg opacity-90">{text ?? t("cta.text")}</p>
+          <h2 className="text-3xl text-center md:text-right md:ltr:text-left font-black leading-tight sm:text-5xl">{title ?? t("cta.title")}</h2>
+          <p className="mt-3 md:text-lg text-center md:text-right md:ltr:text-left text-sm opacity-90">{text ?? t("cta.text")}</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <ContactButton size="lg" label={t("cta.primary")} className="bg-background text-foreground hover:bg-surface-2" />

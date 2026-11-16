@@ -32,7 +32,8 @@ function sample(o: SampleInput): Product {
     description: sampleLong,
     categoryId: o.categoryId,
     images: [1, 2].map((n) => ({
-      src: `/images/products/${o.id}-${n}.svg`,
+      // src: `/images/products/${o.id}-${n}.svg`,
+      src: `/images/products/sample.webp`,
       alt: {
         fa: `${o.name[0]} (${n === 1 ? "نمای روبه‌رو" : "نمای زاویه‌دار"})`,
         en: `${o.name[1]} (${n === 1 ? "front view" : "angled view"})`,

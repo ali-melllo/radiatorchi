@@ -29,16 +29,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function HomePage({ params }: Props) {
   const locale = await resolveLocale(params);
   return (
-    <>
+    <div>
       <Hero />
+      <Featured locale={locale} /> 
       <Trust />
       <CategoriesSection locale={locale} />
-      <Featured locale={locale} />
       <Why />
       <Company />
       <HowToOrder locale={locale} />
       <FaqPreview locale={locale} />
       <ContactCta />
-    </>
+    </div>
   );
 }

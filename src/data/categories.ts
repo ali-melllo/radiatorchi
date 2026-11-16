@@ -9,7 +9,7 @@ export const categories: Category[] = [
       fa: "رادیاتورهای خودرو برای انتقال گرمای موتور به هوا. برای انتخاب مدل مناسب با ما تماس بگیرید.",
       en: "Car radiators that move engine heat into the air. Contact us to choose the right model.",
     },
-    image: "/images/categories/radiators.svg",
+    image: "/images/banners/banner-2.png",
     imageAlt: { fa: "رادیاتور خودرو", en: "Car radiator" },
   },
   {
@@ -20,7 +20,7 @@ export const categories: Category[] = [
       fa: "فن‌های خنک‌کننده رادیاتور و سیستم خنک‌کاری خودرو.",
       en: "Cooling fans for the radiator and the vehicle cooling system.",
     },
-    image: "/images/categories/cooling-fans.svg",
+    image: "/images/banners/fan.png",
     imageAlt: { fa: "فن خنک‌کننده خودرو", en: "Car cooling fan" },
   },
   {
@@ -31,18 +31,19 @@ export const categories: Category[] = [
       fa: "شیلنگ، منبع انبساط و دیگر قطعات مسیر آب خنک‌کاری.",
       en: "Hoses, expansion tanks and other coolant-circuit components.",
     },
-    image: "/images/categories/cooling-components.svg",
+    image: "/images/banners/cooling.png",
     imageAlt: { fa: "قطعات سیستم خنک‌کاری", en: "Cooling system components" },
   },
-  {
-    id: "related-parts",
-    slug: { fa: "qataat-janebi", en: "related-parts" },
-    name: { fa: "قطعات جانبی خودرو", en: "Related automotive parts" },
-    description: {
-      fa: "قطعات جانبی مرتبط با خنک‌کاری و تعمیر رادیاتور.",
-      en: "Related parts for cooling and radiator service.",
-    },
-    image: "/images/categories/related-parts.svg",
-    imageAlt: { fa: "قطعات جانبی خودرو", en: "Related automotive parts" },
-  },
+  // {
+  //   id: "related-parts",
+  //   slug: { fa: "qataat-janebi", en: "related-parts" },
+  //   name: { fa: "قطعات جانبی خودرو", en: "Related automotive parts" },
+  //   description: {
+  //     fa: "قطعات جانبی مرتبط با خنک‌کاری و تعمیر رادیاتور.",
+  //     en: "Related parts for cooling and radiator service.",
+  //   },
+  //   image: "/images/company/trust.png",
+  //   imageAlt: { fa: "قطعات جانبی خودرو", en: "Related automotive parts" },
+  // },
+
 ];

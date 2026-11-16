@@ -9,12 +9,12 @@ export async function Company() {
   const t = await getTranslations("home");
   const values = t.raw("company.values") as string[];
   return (
-    <section className="container-x grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
+    <section className="m-0! overflow-x-hidden container-x grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
       <Parallax>
         <ImageReveal>
-          <div className="chamfer relative aspect-[4/3] overflow-hidden bg-panel">
+          <div className="chamfer relative aspect-4/3 ">
             <Media
-              src="/images/company/company.svg"
+              src="/images/banners/207.png"
               alt={t("company.imageAlt")}
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
@@ -24,12 +24,12 @@ export async function Company() {
         </ImageReveal>
       </Parallax>
       <Reveal direction="end">
-        <h2 className="text-3xl font-black leading-tight sm:text-4xl">{t("company.title")}</h2>
-        <p className="mt-4 max-w-xl text-muted">{t("company.text")}</p>
+        <h2 className="text-3xl text-center md:text-right md:ltr:text-left  rounded font-black leading-tight sm:text-4xl">{t("company.title")}</h2>
+        <p className="mt-4 text-center md:text-right md:ltr:text-left text-sm md:text-base max-w-xl text-muted">{t("company.text")}</p>
         <ul className="mt-6 space-y-3">
           {values.map((v) => (
             <li key={v} className="flex items-center gap-3 font-semibold">
-              <span className="grid size-6 place-items-center bg-brand text-on-brand">
+              <span className="grid rounded-xl size-6 place-items-center bg-brand text-on-brand">
                 <Check className="size-4" aria-hidden="true" />
               </span>
               {v}

@@ -16,14 +16,14 @@ export async function Featured({ locale }: { locale: Locale }) {
           title={t("featured.title")}
           text={t("featured.text")}
           action={
-            <Link href="/products" className="inline-flex items-center gap-2 font-semibold hover:text-brand-ink">
+            <Link href="/products" className="text-center mt-5 md:mt-0 inline-flex items-center gap-2 font-semibold hover:text-brand-ink">
               {t("featured.cta")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden="true" />
             </Link>
           }
         />
       </Reveal>
-      <Stagger className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+      <Stagger className="mt-10 grid gap-5 grid-cols-2 xl:grid-cols-4">
         {getFeaturedProducts(4).map((p) => (
           <StaggerItem key={p.id}>
             <ProductCard product={p} locale={locale} />

@@ -17,14 +17,14 @@ export async function Footer() {
   const heading = "mb-4 text-sm font-bold";
 
   return (
-    <footer className="border-t border-border bg-surface">
+    <footer className="border-t border-border bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] mt-20">
       <div className="container-x grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <Logo locale={locale} />
           <p className="mt-4 max-w-sm text-sm text-muted">{t("description")}</p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 md:col-span-2 lg:col-span-8 lg:grid-cols-4">
+        <div className="grid gap-8 grid-cols-2 md:col-span-2 lg:col-span-8 lg:grid-cols-4">
           <nav aria-label={t("explore")}>
             <h2 className={heading}>{t("explore")}</h2>
             <ul className="space-y-2 text-sm">

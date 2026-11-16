@@ -16,7 +16,7 @@ export async function CategoriesSection({ locale }: { locale: Locale }) {
   const tn = await getTranslations("common");
   const categories = getCategories();
   return (
-    <section className="bg-surface py-20 lg:py-28">
+    <section className=" py-20 lg:py-28">
       <div className="container-x">
         <Reveal>
           <SectionHeading
@@ -34,29 +34,31 @@ export async function CategoriesSection({ locale }: { locale: Locale }) {
           {categories.map((c, i) => {
             const count = getProductsByCategory(c.id).length;
             return (
-              <StaggerItem key={c.id} className={cn(i === 0 && "md:col-span-2 md:row-span-2")}>
+              <StaggerItem key={c.id} className={cn(i === 0 && "md:col-span-2 md:row-span-2" , "bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl shadow-2xl")}>
                 <Link
                   href={categoryPath(c.slug[locale])}
                   aria-label={`${tn("viewCategory")}: ${c.name[locale]}`}
                   className={cn(
-                    "group relative isolate flex h-full min-h-60 flex-col justify-end overflow-hidden bg-panel p-6 text-panel-foreground",
-                    i === 0 && "min-h-80 md:min-h-[32rem]",
+                    "group relative rounded-2xl flex h-full min-h-60 flex-col justify-around items-end overflow-hidden p-6 text-panel-foreground",
+                    i === 0 && "min-h-80 md:min-h-128" , "rounded-2xl",
                   )}
                 >
                   <Media
                     src={c.image}
                     alt=""
-                    fill
+                    height={2000}
+                    width={2000}
                     sizes={i === 0 ? "(min-width: 768px) 66vw, 100vw" : "(min-width: 768px) 33vw, 100vw"}
-                    className="-z-10 object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="object-cover m-auto transition-transform duration-700 ease-out group-hover:scale-105"
                   />
-                  <span className="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent" aria-hidden="true" />
-                  <h3 className={cn("font-black", i === 0 ? "text-3xl" : "text-xl")}>{c.name[locale]}</h3>
-                  <p className="mt-1 max-w-md text-sm text-panel-muted">{c.description[locale]}</p>
+                  <div className="flex mt-auto flex-col gap-2 items-start w-full">
+                  <h3 className={cn("font-black text-foreground", i === 0 ? "text-xl md:text-3xl" : "text-xl")}>{c.name[locale]}</h3>
+                  <p className="mt-1 max-w-md text-sm font-medium text-panel-muted">{c.description[locale]}</p>
                   <span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold">
                     {tc("productCount", { count })}
                     <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" aria-hidden="true" />
                   </span>
+                  </div>
                 </Link>
               </StaggerItem>
             );

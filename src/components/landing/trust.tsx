@@ -8,7 +8,7 @@ export async function Trust() {
   const t = await getTranslations("home");
   const items = t.raw("trust.items") as Item[];
   return (
-    <section id="trust" className="container-x grid items-center gap-10 py-20 lg:py-10 lg:grid-cols-12 ">
+    <section id="trust" className="container-x grid border-y mb- items-center gap-10 py-20 lg:py-10 lg:grid-cols-12 ">
 
       <div className="lg:col-span-3 z-0">
         <ImageReveal immediate>
@@ -25,8 +25,8 @@ export async function Trust() {
       </div>
 
       <Reveal className="lg:col-span-4">
-        <h2 className="text-3xl font-black leading-tight sm:text-4xl">{t("trust.title")}</h2>
-        <p className="mt-4 max-w-md text-muted">{t("trust.text")}</p>
+        <h2 className="text-3xl text-center md:text-right md:ltr:text-left font-black leading-tight sm:text-4xl">{t("trust.title")}</h2>
+        <p className="mt-4 text-sm md:text-base text-center md:text-right md:ltr:text-left max-w-md text-muted">{t("trust.text")}</p>
       </Reveal>
       <Stagger as="ul" className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:col-span-5">
         {items.map((item) => (
