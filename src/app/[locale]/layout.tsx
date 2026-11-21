@@ -114,7 +114,7 @@ export async function generateMetadata({
         {
           url: imageUrl,
           width: 1200,
-          height: 600,
+          height: 630,
           alt: "رادیاتورچی - فروش تخصصی رادیاتور و قطعات سیستم خنک‌کاری خودرو",
           type: "image/jpeg",
         },
