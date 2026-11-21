@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Drawer } from "@/components/ui/drawer";
+import { Select } from "@/components/ui/select";
 import { catalogQuery, SORTS, type CatalogParams, type SortKey } from "@/lib/products";
 import { cn } from "@/lib/utils";
 
@@ -53,10 +54,10 @@ export function CatalogControls({ categories, makes, values }: Props) {
               data-testid={`filter-category-${c.id || "all"}`}
               onClick={() => navigate({ category: c.id })}
               className={cn(
-                "h-9 border px-3 text-sm transition-colors",
+                "h-10 rounded-xl border px-4 text-sm font-medium transition-colors",
                 values.category === c.id
                   ? "border-brand bg-brand text-on-brand"
-                  : "border-border hover:border-metal",
+                  : "border-border bg-background hover:border-metal hover:bg-surface",
               )}
             >
               {c.name}
@@ -67,19 +68,19 @@ export function CatalogControls({ categories, makes, values }: Props) {
       {makes.length > 0 && (
         <div>
           <label htmlFor={makeId} className="mb-3 block text-sm font-bold">{t("manufacturer")}</label>
-          <select
+          <Select
             id={makeId}
             value={values.make}
             onChange={(e) => navigate({ make: e.target.value })}
-            className="h-11 w-full border border-border bg-background px-3 lg:w-56"
+            className="w-full lg:w-56"
           >
             <option value="">{t("all")}</option>
             {makes.map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}
-          </select>
+          </Select>
         </div>
       )}
       {hasFilters && (
-        <Button variant="ghost" size="sm" onClick={() => { setQ(""); navigate({ q: "", category: "", make: "" }); }}>
+        <Button variant="ghost" size="md" className="rounded-xl" onClick={() => { setQ(""); navigate({ q: "", category: "", make: "" }); }}>
           {t("clear")}
         </Button>
       )}
@@ -89,30 +90,30 @@ export function CatalogControls({ categories, makes, values }: Props) {
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-end gap-3">
-        <div className="min-w-[14rem] flex-1">
+        <div className="min-w-56 flex-1">
           <label htmlFor="catalog-search" className="sr-only">{t("searchLabel")}</label>
           <div className="relative">
-            <Search className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-muted" aria-hidden="true" />
+            <Search className="pointer-events-none absolute inset-s-4 top-1/2 size-4 -translate-y-1/2 text-muted" aria-hidden="true" />
             <input
               id="catalog-search"
               type="search"
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder={t("searchPlaceholder")}
-              className="h-11 w-full border border-border bg-background ps-10 pe-3 placeholder:text-muted"
+              className="h-11 w-full px-10 rounded-xl border border-border bg-background  text-sm transition-colors placeholder:text-muted hover:border-metal focus-visible:border-brand"
             />
           </div>
         </div>
         <div>
           <label htmlFor="catalog-sort" className="sr-only">{t("sort")}</label>
-          <select
+          <Select
             id="catalog-sort"
             value={values.sort}
             onChange={(e) => navigate({ sort: e.target.value as SortKey })}
-            className="h-11 border border-border bg-background px-3"
+            className="min-w-40"
           >
             {SORTS.map((s) => <option key={s} value={s}>{sortLabels[s]}</option>)}
-          </select>
+          </Select>
         </div>
         <div className="lg:hidden">
           <Drawer
@@ -121,7 +122,7 @@ export function CatalogControls({ categories, makes, values }: Props) {
             title={t("filtersTitle")}
             closeLabel={tc("close")}
             trigger={
-              <Button variant="secondary" size="md">
+              <Button variant="secondary" size="md" className="h-11 rounded-xl">
                 <SlidersHorizontal className="size-4" aria-hidden="true" />
                 {t("filters")}
               </Button>

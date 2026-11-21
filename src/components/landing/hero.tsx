@@ -12,9 +12,9 @@ import { cn } from "cn";
 export async function Hero() {
   const t = await getTranslations("home");
   return (
-    <section className="relative w-full min-h-dvh isolate overflow-hidden border-b border-border -mt-20">
+    <section className="relative w-full min-h-dvh isolate overflow-hidden border-b border-border shadow-2xl -mt-20">
 
-      <div className="h-dvh" style={{ width: '100%', position: 'absolute' }}>
+      <div className="h-full" style={{ width: '100%', position: 'absolute' }}>
         <SideRays
           style={{}}
           rayColor1="#FFC46B"

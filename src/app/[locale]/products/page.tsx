@@ -3,8 +3,6 @@ import { getTranslations } from "next-intl/server";
 import { CatalogControls } from "@/components/product/catalog-controls";
 import { Pagination } from "@/components/product/pagination";
 import { ProductCard } from "@/components/product/product-card";
-import { Breadcrumbs } from "@/components/shared/breadcrumbs";
-import { PageHero } from "@/components/shared/page-hero";
 import { ContactButton } from "@/components/modals/contact-button";
 import { Link } from "@/i18n/navigation";
 import { buttonStyles } from "@/components/ui/button";
@@ -18,6 +16,7 @@ import {
   parseCatalogParams,
 } from "@/lib/products";
 import { buildMetadata, samePath } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -41,10 +40,10 @@ export default async function ProductsPage({ params, searchParams }: Props) {
 
   return (
     <>
-      <PageHero title={t("title")} text={t("subtitle")}>
+      <div  className="container-x py-5 md:py-10">
         <Breadcrumbs items={[{ label: tn("products"), href: "/products" }]} />
-      </PageHero>
-      <div className="container-x py-10 lg:py-14">
+      </div>
+      <div className="container-x">
         <CatalogControls
           categories={getCategories().map((c) => ({ id: c.id, name: c.name[locale] }))}
           makes={getAvailableManufacturers().map((m) => ({ id: m.id, name: m.name[locale] }))}
@@ -54,7 +53,7 @@ export default async function ProductsPage({ params, searchParams }: Props) {
           {t("results", { count: filtered.length })}
         </p>
         {items.length > 0 ? (
-          <ul className="mt-4 grid gap-5 sm:grid-cols-2 xl:grid-cols-3" data-testid="product-grid">
+          <ul className="mt-4 grid gap-3 md:gap-5 grid-cols-2 xl:grid-cols-3" data-testid="product-grid">
             {items.map((p, i) => (
               <li key={p.id}>
                 <ProductCard product={p} locale={locale} priority={i < 3} />

@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { ContactButton } from "@/components/modals/contact-button";
@@ -47,11 +46,7 @@ export async function ProductCard({ product, locale, priority }: { product: Prod
         {makes && <p className="mt-1 text-xs rounded-xl bg-accent w-fit px-3 py-1 text-muted">{makes}</p>}
         <p className="mt-3 line-clamp-2 text-xs md:text-sm text-muted">{product.shortDescription[locale]}</p>
         <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-5">
-          <Link href={href} className="inline-flex items-center gap-1.5 text-sm font-semibold hover:text-brand-ink">
-            {t("viewProduct")}
-            <ArrowRight className="size-4 rtl:rotate-180" aria-hidden="true" />
-          </Link>
-          <ContactButton className="text-nowrap" product={product.name[locale]} size="sm" variant="secondary" icon={false} />
+          <ContactButton className="text-nowrap w-full rounded-3xl" product={product.name[locale]} size="sm" variant="secondary" icon={false} />
         </div>
       </div>
     </article>

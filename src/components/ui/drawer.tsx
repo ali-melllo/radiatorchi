@@ -22,7 +22,7 @@ export function Drawer({ open, onOpenChange, trigger, title, closeLabel, childre
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/60 data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in" />
         <Dialog.Content
           aria-describedby={undefined}
-          className="drawer fixed inset-y-0 end-0 z-50 flex w-[min(22rem,88vw)] flex-col overflow-y-auto border-s border-border bg-background p-6 shadow-2xl"
+          className="drawer fixed inset-y-0 inset-e-0 z-50 flex w-[min(22rem,88vw)] flex-col overflow-y-auto border-s border-border bg-background p-3 shadow-2xl"
         >
           <div className="mb-6 flex items-center justify-between">
             <Dialog.Title className="text-lg font-bold">{title}</Dialog.Title>

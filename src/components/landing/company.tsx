@@ -10,20 +10,7 @@ export async function Company() {
   const values = t.raw("company.values") as string[];
   return (
     <section className="overflow-x-hidden container-x grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
-      <Parallax>
-        <ImageReveal>
-          <div className="chamfer relative aspect-4/3 ">
-            <Media
-              src="/images/banners/207.png"
-              alt={t("company.imageAlt")}
-              fill
-              sizes="(min-width: 1024px) 45vw, 100vw"
-              className="object-cover"
-            />
-          </div>
-        </ImageReveal>
-      </Parallax>
-      <Reveal direction="end">
+     <Reveal direction="end">
         <h2 className="text-3xl text-center md:text-right md:ltr:text-left  rounded font-black leading-tight sm:text-4xl">{t("company.title")}</h2>
         <p className="mt-4 text-center md:text-right md:ltr:text-left text-sm md:text-base max-w-xl text-muted">{t("company.text")}</p>
         <ul className="mt-6 space-y-3">
@@ -41,6 +28,20 @@ export async function Company() {
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden="true" />
         </Link>
       </Reveal>
+      <Parallax>
+        <ImageReveal>
+          <div className="chamfer relative aspect-4/3 ">
+            <Media
+              src="/images/banners/207.png"
+              alt={t("company.imageAlt")}
+              fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+        </ImageReveal>
+      </Parallax>
+      
     </section>
   );
 }

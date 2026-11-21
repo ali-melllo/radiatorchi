@@ -17,6 +17,7 @@ import { resolveLocale } from "@/lib/page";
 import { buildSlugMap } from "@/lib/routes";
 import { buildMetadata, samePath } from "@/lib/seo";
 import "../globals.css";
+import { FloatingContactButton } from "@/components/layout/floating-contact-button";
 
 const vazirmatn = Vazirmatn({ subsets: ["arabic", "latin"], variable: "--font-fa", display: "swap" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-en", display: "swap" });
@@ -85,6 +86,10 @@ export default async function LocaleLayout({ children, params }: Props) {
                 </a>
                 <Header slugMap={buildSlugMap()} />
                 <main id="main">{children}</main>
+
+
+                <FloatingContactButton />
+
                 <Footer />
               </ContactModalProvider>
             </MotionProvider>

@@ -34,7 +34,7 @@ export async function CategoriesSection({ locale }: { locale: Locale }) {
           {categories.map((c, i) => {
             const count = getProductsByCategory(c.id).length;
             return (
-              <StaggerItem key={c.id} className={cn(i === 0 && "md:col-span-2 md:row-span-2" , "bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl shadow-2xl")}>
+              <StaggerItem key={c.id} className={cn(i === 0 && "md:col-span-2 md:row-span-2" , "shadow-2xl bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] rounded-xl")}>
                 <Link
                   href={categoryPath(c.slug[locale])}
                   aria-label={`${tn("viewCategory")}: ${c.name[locale]}`}

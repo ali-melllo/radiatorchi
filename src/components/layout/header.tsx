@@ -36,7 +36,7 @@ export function Header({ slugMap }: { slugMap: SlugMap }) {
   return (
     <header
         className={cn(
-          "sticky top-0 z-50 mx-auto w-full border px-5 md:px-10",
+          "sticky top-0 z-50 mx-auto w-full border md:px-10",
           "transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1.03)]",
           "will-change-[max-width,padding,top,border-radius,background-color]",
           scrolled
@@ -96,7 +96,7 @@ export function Header({ slugMap }: { slugMap: SlugMap }) {
             }
           >
             <nav aria-label={t("main")}>
-              <ul className="flex flex-col">
+              <ul className="flex flex-col ">
                 {headerLinks.map((link) => (
                   <li key={link.href} className="border-b border-border">
                     <Link
@@ -104,7 +104,7 @@ export function Header({ slugMap }: { slugMap: SlugMap }) {
                       onClick={() => setMenuOpen(false)}
                       aria-current={isActive(pathname, link.href) ? "page" : undefined}
                       className={cn(
-                        "flex h-14 items-center text-lg font-semibold",
+                        "flex h-14 items-center font-semibold",
                         isActive(pathname, link.href) && "text-brand-ink",
                       )}
                     >

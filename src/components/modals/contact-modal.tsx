@@ -65,14 +65,14 @@ function ContactDialog({
           <Dialog.Portal forceMount>
             <Dialog.Overlay asChild forceMount>
               <m.div
-                className="fixed inset-0 z-[60] bg-black/65"
+                className="fixed inset-0 z-60 bg-black/65"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.18 }}
               />
             </Dialog.Overlay>
-            <div className="pointer-events-none fixed inset-0 z-[61] grid place-items-end p-3 sm:place-items-center sm:p-6">
+            <div className="pointer-events-none fixed inset-0 z-61 grid place-items-end p-3 sm:place-items-center sm:p-6">
               <Dialog.Content asChild forceMount>
                 <m.div
                   className="pointer-events-auto w-full max-w-md border border-border bg-background p-6 shadow-2xl sm:rounded-lg"
@@ -96,7 +96,7 @@ function ContactDialog({
                   {methods.length === 0 ? (
                     <p className="mt-6 text-sm text-muted">{t("empty")}</p>
                   ) : (
-                    <ul className="mt-6 divide-y divide-border border-y border-border">
+                    <ul className="mt-6 divide-y divide-border border-border">
                       {methods.map((method) => {
                         const Icon = icons[method.id];
                         const { label, action } = labels[method.id];
@@ -108,10 +108,10 @@ function ContactDialog({
                               {...(method.id === "whatsapp" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                               className="group flex items-center gap-4 py-4 transition-colors hover:bg-surface"
                             >
-                              <span className="grid size-11 shrink-0 place-items-center bg-brand text-on-brand">
+                              <span className="grid size-11 shrink-0 rounded-2xl items-center place-items-center bg-brand text-on-brand">
                                 <Icon className="size-5" aria-hidden="true" />
                               </span>
-                              <span className="min-w-0 flex-1">
+                              <span className="min-w-0 flex gap-3 flex-1">
                                 <span className="block text-sm text-muted">{label}</span>
                                 <span dir="ltr" className="block truncate text-start font-semibold">
                                   {method.display}
