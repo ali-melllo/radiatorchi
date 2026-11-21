@@ -14,7 +14,7 @@ export async function FaqPreview({ locale }: { locale: Locale }) {
     <section className="container-x grid gap-12 py-20 lg:grid-cols-12 lg:py-38">
       <Reveal className="lg:col-span-4 flex flex-col h-full ">
         <h2 className="text-3xl text-center md:text-right md:ltr:text-left font-black leading-tight sm:text-4xl">{t("faq.title")}</h2>
-        <Link href="/faq" className="mt-6 inline-flex items-center gap-2 font-semibold hover:text-brand-ink">
+        <Link href="/faq" className="mt-6 bg-accent w-fit rounded-lg px-3 text-sm py-2 mx-auto md:mr-0 md:ltr:ml-0 inline-flex items-center gap-2 font-semibold hover:text-brand-ink">
           {t("faq.cta")}
           <ArrowRight className="size-4 rtl:rotate-180" aria-hidden="true" />
         </Link>

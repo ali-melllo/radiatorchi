@@ -9,7 +9,7 @@ export async function Why() {
   const t = await getTranslations("home");
   const rows = t.raw("why.rows") as Row[];
   return (
-    <section className="overflow-x-hidden shadow-2xl bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] py-20 text-panel-foreground lg:py-20">
+    <section className="overflow-x-hidden shadow-lg pt-10 pb-20 text-panel-foreground lg:py-20">
       <div className="container-x grid gap-12 lg:grid-cols-12">
         <Reveal className="lg:col-span-4">
           <h2 className="text-3xl text-center md:text-right md:ltr:text-left text-foreground font-black leading-tight sm:text-4xl">{t("why.title")}</h2>
@@ -32,7 +32,7 @@ export async function Why() {
             {rows.map((row) => (
               <StaggerItem key={row.label} className="grid gap-1 border-b border-panel-border py-5 sm:grid-cols-[11rem_1fr] sm:gap-8">
                 <dt className="font-semibold text-foreground">{row.label}</dt>
-                <dd className="font-semibold text-muted-foreground">{row.value}</dd>
+                <dd className="font-semibold text-xs md:text-base text-muted-foreground">{row.value}</dd>
               </StaggerItem>
             ))}
           </dl>

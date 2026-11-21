@@ -325,7 +325,9 @@
     "whatsappMessage": "Hello, I would like information about “{product}”.",
     "whatsappGeneric": "Hello, I would like information about Radiatorchi products.",
     "emailSubjectGeneric": "Product inquiry",
-    "empty": "No contact method has been configured yet."
+    "empty": "No contact method has been configured yet.",
+    "copyItem": "Copy {item}",
+    "copied": "Copied"
   },
   "ordering": {
     "title": "Ordering guide",

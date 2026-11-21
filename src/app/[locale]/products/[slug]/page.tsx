@@ -62,12 +62,13 @@ export default async function ProductPage({ params }: Props) {
     ...(product.sku ? [{ id: "sku", label: t("specSku"), value: product.sku }] : []),
     ...(product.specifications ?? []).map((s) => ({ id: s.id, label: s.label[locale], value: s.value[locale] })),
   ];
+
   const related = getRelatedProducts(product, 4);
 
   return (
     <>
       {!product.isSample && category && <JsonLd data={productJsonLd(locale, product, category.name[locale])} />}
-      <div className="container-x pb-28 pt-8 lg:pb-16">
+      <div className="container-x pb-10 pt-5 md:pt-8 lg:pb-16">
         <Breadcrumbs
           items={[
             { label: tc("products"), href: "/products" },

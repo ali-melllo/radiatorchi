@@ -15,9 +15,9 @@ export async function ContactCta({ title, text }: { title?: string; text?: strin
           <h2 className="text-3xl text-center md:text-right md:ltr:text-left font-black leading-tight sm:text-5xl">{title ?? t("cta.title")}</h2>
           <p className="mt-3 md:text-lg text-center md:text-right md:ltr:text-left text-sm opacity-90">{text ?? t("cta.text")}</p>
         </div>
-        <div className="flex flex-wrap gap-3">
+        <div className="grid grid-cols-2 md:flex flex-wrap gap-3">
           <ContactButton size="lg" label={t("cta.primary")} className="bg-background text-foreground hover:bg-surface-2" />
-          <Link href="/products" className={buttonStyles({ variant: "ghost", size: "lg", className: "border border-white/70 text-on-brand hover:bg-white/10" })}>
+          <Link href="/products" className={buttonStyles({ variant: "ghost", size: "lg", className: "text-nowrap border border-white/70 text-on-brand hover:bg-white/10" })}>
             {t("cta.secondary")}
           </Link>
         </div>

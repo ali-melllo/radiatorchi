@@ -11,6 +11,7 @@ import { Trust } from "@/components/landing/trust";
 import { Why } from "@/components/landing/why";
 import { resolveLocale } from "@/lib/page";
 import { buildMetadata, samePath } from "@/lib/seo";
+import { FloatingContactButton } from "@/components/layout/floating-contact-button";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -39,6 +40,7 @@ export default async function HomePage({ params }: Props) {
       <HowToOrder locale={locale} />
       <FaqPreview locale={locale} />
       <ContactCta />
+      <FloatingContactButton />
     </div>
   );
 }

@@ -9,7 +9,7 @@ export async function Company() {
   const t = await getTranslations("home");
   const values = t.raw("company.values") as string[];
   return (
-    <section className="overflow-x-hidden container-x grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
+    <section className="overflow-x-hidden container-x grid items-center gap-12 pb-20 pt-10 lg:grid-cols-2 lg:py-28">
      <Reveal direction="end">
         <h2 className="text-3xl text-center md:text-right md:ltr:text-left  rounded font-black leading-tight sm:text-4xl">{t("company.title")}</h2>
         <p className="mt-4 text-center md:text-right md:ltr:text-left text-sm md:text-base max-w-xl text-muted">{t("company.text")}</p>

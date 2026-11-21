@@ -11,7 +11,7 @@ export function FaqAccordion({ items }: { items: FaqEntry[] }) {
       {items.map((item) => (
         <Accordion.Item key={item.id} value={item.id}>
           <Accordion.Header>
-            <Accordion.Trigger className="group flex w-full items-center justify-between gap-4 py-5 text-start text-lg font-semibold">
+            <Accordion.Trigger className="group flex w-full items-center justify-between gap-4 py-5 text-start md:text-lg font-semibold">
               {item.question}
               <Plus className="size-5 shrink-0 text-brand-ink transition-transform duration-200 group-data-[state=open]:rotate-45" aria-hidden="true" />
             </Accordion.Trigger>

@@ -8,7 +8,7 @@ export async function Trust() {
   const t = await getTranslations("home");
   const items = t.raw("trust.items") as Item[];
   return (
-    <section id="trust" className=" container-x grid border- items-center gap-10 py-20 lg:py-10 lg:grid-cols-12 ">
+    <section id="trust" className=" container-x grid border- items-center gap-10 pb-20 lg:py-10 lg:grid-cols-12 ">
 
       <div className="lg:col-span-3 z-0">
         <ImageReveal immediate>
