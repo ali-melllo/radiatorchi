@@ -1,8 +1,22 @@
+
 import type { Locale } from "@/types";
 
+const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://radiatorchi.vercel.app"
+).replace(/\/+$/, "");
+
 export const siteConfig = {
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.radiatorchi.example").replace(/\/$/, ""),
-  ogImage: "/images/logo/typography.png",
-  ogLocale: { fa: "fa_IR", en: "en_US" } satisfies Record<Locale, string>,
-  dir: { fa: "rtl", en: "ltr" } satisfies Record<Locale, "rtl" | "ltr">,
+  url: siteUrl,
+
+  ogImage: "/images/banners/hero.png",
+
+  ogLocale: {
+    fa: "fa_IR",
+    en: "en_US",
+  } satisfies Record<Locale, string>,
+
+  dir: {
+    fa: "rtl",
+    en: "ltr",
+  } satisfies Record<Locale, "rtl" | "ltr">,
 } as const;
