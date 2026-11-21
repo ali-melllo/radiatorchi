@@ -32,7 +32,7 @@ export default async function FaqPage({ params }: Props) {
       </PageHero>
       <div className="container-x py-12 lg:py-16">
         <FaqExplorer groups={groups} items={items} />
-        <div className="mt-14 border border-border bg-surface p-8">
+        <div className="flex flex-col bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] justify-center items-center mt-14 border border-border rounded-xl p-8">
           <h2 className="text-2xl font-black">{t("ctaTitle")}</h2>
           <p className="mt-1 text-muted">{t("ctaText")}</p>
           <ContactButton className="mt-5" />

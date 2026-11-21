@@ -7,7 +7,7 @@ export type NavLink = { href: string; key: NavKey };
 export const headerLinks: NavLink[] = [
   { href: "/", key: "home" },
   { href: "/products", key: "products" },
-  { href: "/categories", key: "categories" },
+  // { href: "/categories", key: "categories" },
   { href: "/about", key: "about" },
   { href: "/contact", key: "contact" },
   { href: "/faq", key: "faq" },
