@@ -20,7 +20,7 @@ Set `NEXT_PUBLIC_SITE_URL` (see `.env.example`) for canonicals, hreflang, sitema
 | Products, images, compatibility, specs, SKU | `src/data/products.ts` (demo entries are flagged `isSample`: visible notice, `noindex`, excluded from sitemap) |
 | Categories, manufacturers, FAQ | `src/data/categories.ts`, `manufacturers.ts`, `faqs.ts` |
 | Company, legal and UI copy | `messages/fa.json`, `messages/en.json` (legal text is a draft and needs legal review) |
-| OG image | `public/images/banners/og.png` (1200x630 placeholder) |
+| OG image | `public/images/banners/og.jpg` (1200x630 placeholder) |
 
 ## Rendering
 | Route | Mode |

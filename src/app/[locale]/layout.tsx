@@ -114,9 +114,9 @@ export async function generateMetadata({
         {
           url: imageUrl,
           width: 1200,
-          height: 630,
+          height: 600,
           alt: "رادیاتورچی - فروش تخصصی رادیاتور و قطعات سیستم خنک‌کاری خودرو",
-          type: "image/png",
+          type: "image/jpeg",
         },
       ],
     },
@@ -125,12 +125,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [
-        {
-          url: imageUrl,
-          alt: "Radiatorchi - Automotive Cooling System Components",
-        },
-      ],
+      images: [imageUrl],
     },
 
     robots: {

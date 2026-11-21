@@ -8,7 +8,7 @@ const siteUrl = (
 export const siteConfig = {
   url: siteUrl,
 
-  ogImage: "/images/banners/hero.png",
+  ogImage: "/images/banners/og.jpg",
 
   ogLocale: {
     fa: "fa_IR",
